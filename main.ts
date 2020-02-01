@@ -30,6 +30,7 @@ game.onUpdateInterval(1000, function () {
 . . . f f . . . 
 `, mySprite, Math.randomRange(-25, 25), Math.randomRange(-25, 25))
     projectile.lifespan = 3000
+    // 左側のときは画像を反転させる
     if (projectile.vx < 0) {
         projectile.image.flipX()
     }
